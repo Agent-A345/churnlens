@@ -96,7 +96,7 @@ A Streamlit dashboard with interactive Plotly charts. Four tabs:
 ## Project Structure
 
 ```
-churn-project/
+churnlens/
 ├── app.py                    Streamlit web app
 ├── assets/style.css          dashboard styling
 ├── data/
@@ -123,8 +123,8 @@ churn-project/
 Requires Python 3.10 or newer.
 
 ```bash
-git clone https://github.com/<your-username>/churn-project.git
-cd churn-project
+git clone https://github.com/Agent-A345/churnlens.git
+cd churnlens
 
 python -m venv venv
 venv\Scripts\activate          # Windows
