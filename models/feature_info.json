@@ -1,0 +1,126 @@
+{
+  "numeric": {
+    "Tenure": {
+      "min": 0.0,
+      "max": 61.0,
+      "median": 9.0,
+      "is_int": true
+    },
+    "CityTier": {
+      "min": 1.0,
+      "max": 3.0,
+      "median": 1.0,
+      "is_int": true
+    },
+    "WarehouseToHome": {
+      "min": 5.0,
+      "max": 127.0,
+      "median": 13.0,
+      "is_int": true
+    },
+    "HourSpendOnApp": {
+      "min": 0.0,
+      "max": 5.0,
+      "median": 3.0,
+      "is_int": true
+    },
+    "NumberOfDeviceRegistered": {
+      "min": 1.0,
+      "max": 6.0,
+      "median": 4.0,
+      "is_int": true
+    },
+    "SatisfactionScore": {
+      "min": 1.0,
+      "max": 5.0,
+      "median": 3.0,
+      "is_int": true
+    },
+    "NumberOfAddress": {
+      "min": 1.0,
+      "max": 22.0,
+      "median": 3.0,
+      "is_int": true
+    },
+    "Complain": {
+      "min": 0.0,
+      "max": 1.0,
+      "median": 0.0,
+      "is_int": true
+    },
+    "OrderAmountHikeFromlastYear": {
+      "min": 11.0,
+      "max": 26.0,
+      "median": 15.0,
+      "is_int": true
+    },
+    "CouponUsed": {
+      "min": 0.0,
+      "max": 16.0,
+      "median": 1.0,
+      "is_int": true
+    },
+    "OrderCount": {
+      "min": 1.0,
+      "max": 16.0,
+      "median": 2.0,
+      "is_int": true
+    },
+    "DaySinceLastOrder": {
+      "min": 0.0,
+      "max": 46.0,
+      "median": 3.0,
+      "is_int": true
+    },
+    "CashbackAmount": {
+      "min": 0.0,
+      "max": 324.99,
+      "median": 163.88,
+      "is_int": false
+    }
+  },
+  "categorical": {
+    "PreferredLoginDevice": {
+      "options": [
+        "Mobile Phone",
+        "Computer"
+      ],
+      "mode": "Mobile Phone"
+    },
+    "PreferredPaymentMode": {
+      "options": [
+        "Debit Card",
+        "Credit Card",
+        "E wallet",
+        "Cash on Delivery",
+        "UPI"
+      ],
+      "mode": "Debit Card"
+    },
+    "Gender": {
+      "options": [
+        "Male",
+        "Female"
+      ],
+      "mode": "Male"
+    },
+    "PreferedOrderCat": {
+      "options": [
+        "Mobile Phone",
+        "Laptop & Accessory",
+        "Fashion",
+        "Grocery",
+        "Others"
+      ],
+      "mode": "Mobile Phone"
+    },
+    "MaritalStatus": {
+      "options": [
+        "Married",
+        "Single",
+        "Divorced"
+      ],
+      "mode": "Married"
+    }
+  }
+}

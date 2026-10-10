@@ -1,0 +1,71 @@
+{
+  "final_model": "XGBoost (Tuned)",
+  "xgb_tuned_params": {
+    "colsample_bytree": 0.6028,
+    "gamma": 0.0461,
+    "learning_rate": 0.0596,
+    "max_depth": 9,
+    "min_child_weight": 2,
+    "n_estimators": 675,
+    "subsample": 0.9895
+  },
+  "n_rows": 5073,
+  "churn_rate": 0.16577961758328405,
+  "n_train": 4058,
+  "n_test": 1015,
+  "results": {
+    "Logistic Regression": {
+      "accuracy": 0.7961,
+      "precision": 0.4369,
+      "recall": 0.8036,
+      "f1": 0.566,
+      "roc_auc": 0.8726,
+      "cv_f1_mean": 0.5908,
+      "cv_f1_std": 0.0261
+    },
+    "Random Forest": {
+      "accuracy": 0.9655,
+      "precision": 0.9854,
+      "recall": 0.8036,
+      "f1": 0.8852,
+      "roc_auc": 0.9909,
+      "cv_f1_mean": 0.7998,
+      "cv_f1_std": 0.0194
+    },
+    "XGBoost": {
+      "accuracy": 0.9724,
+      "precision": 0.907,
+      "recall": 0.9286,
+      "f1": 0.9176,
+      "roc_auc": 0.9888,
+      "cv_f1_mean": 0.8719,
+      "cv_f1_std": 0.0184
+    },
+    "XGBoost (Tuned)": {
+      "accuracy": 0.9793,
+      "precision": 0.9565,
+      "recall": 0.9167,
+      "f1": 0.9362,
+      "roc_auc": 0.9871,
+      "cv_f1_mean": 0.873
+    }
+  },
+  "confusion_matrix": {
+    "tn": 840,
+    "fp": 7,
+    "fn": 14,
+    "tp": 154
+  },
+  "top_shap_features": {
+    "Tenure": 2.4528,
+    "Complain": 1.1264,
+    "NumberOfAddress": 0.8429,
+    "CashbackAmount": 0.7834,
+    "MaritalStatus_Single": 0.5391,
+    "SatisfactionScore": 0.5202,
+    "DaySinceLastOrder": 0.5132,
+    "WarehouseToHome": 0.4987,
+    "CityTier": 0.4945,
+    "OrderAmountHikeFromlastYear": 0.3617
+  }
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --ink: #14213D;
+  --ink-soft: #2B3A5C;
+  --paper: #F4F6FA;
+  --surface: #FFFFFF;
+  --line: #DDE3EC;
+  --muted: #5B6578;
+  --safe: #1B9E8F;
+  --watch: #E09A2D;
+  --risk: #C8344B;
+}
+
+html, body, [class*="css"], .stApp, button, input, select, textarea {
+  font-family: 'Manrope', system-ui, sans-serif !important;
+}
+.stApp { background: var(--paper); }
+.block-container { padding-top: 1.2rem; max-width: 1280px; }
+header[data-testid="stHeader"] { background: transparent; }
+
+/* Header band */
+.hero {
+  background: var(--ink);
+  color: #fff;
+  border-radius: 14px;
+  padding: 28px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+.hero h1 {
+  color: #fff;
+  font-size: 2.05rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+  margin: 0 0 6px 0;
+  padding: 0;
+}
+.hero p { color: #C9D2E3; margin: 0; font-size: 0.98rem; max-width: 58ch; }
+.hero-stats { display: flex; gap: 26px; flex-wrap: wrap; }
+.hero-stat .v {
+  font-size: 1.55rem; font-weight: 800; color: #fff;
+  font-variant-numeric: tabular-nums; line-height: 1.1;
+}
+.hero-stat .l { font-size: 0.8rem; color: #9FB0CC; }
+
+/* Tabs */
+.stTabs [data-baseweb="tab-list"] { gap: 6px; border-bottom: 1px solid var(--line); }
+.stTabs [data-baseweb="tab"] {
+  font-weight: 600; color: var(--muted); padding: 10px 16px;
+  border-radius: 8px 8px 0 0;
+}
+.stTabs [aria-selected="true"] { color: var(--ink) !important; background: var(--surface); }
+.stTabs [data-baseweb="tab-highlight"] { background: var(--ink); height: 3px; }
+
+/* Panels (st.container(border=True)) */
+div[data-testid="stVerticalBlockBorderWrapper"] {
+  background: var(--surface);
+  border: 1px solid var(--line) !important;
+  border-radius: 12px;
+}
+.panel-title { font-weight: 700; color: var(--ink); font-size: 1.02rem; margin: 0 0 2px 0; }
+.panel-sub { color: var(--muted); font-size: 0.86rem; margin: 0 0 8px 0; }
+
+/* Buttons */
+.stButton > button, .stFormSubmitButton > button, .stDownloadButton > button {
+  border-radius: 8px; font-weight: 700;
+}
+.stFormSubmitButton > button[kind="primaryFormSubmit"], .stButton > button[kind="primary"] {
+  background: var(--ink); border-color: var(--ink);
+}
+.stFormSubmitButton > button[kind="primaryFormSubmit"]:hover { background: var(--ink-soft); }
+
+/* Verdict card */
+.verdict {
+  border-radius: 12px; padding: 16px 18px; margin-top: 4px;
+  border-left: 6px solid var(--c); background: color-mix(in srgb, var(--c) 9%, white);
+}
+.verdict .t { font-weight: 800; font-size: 1.25rem; color: var(--c); margin: 0; }
+.verdict .d { color: #2A3342; margin: 4px 0 0 0; font-size: 0.93rem; }
+
+/* Reasons */
+.reasons h4 { font-size: 0.95rem; font-weight: 700; color: var(--ink); margin: 14px 0 6px 0; }
+.reason {
+  display: flex; align-items: center; gap: 10px;
+  padding: 8px 10px; border-radius: 8px; margin-bottom: 6px;
+  background: #F7F9FC; font-size: 0.92rem; color: #222B3A;
+}
+.reason .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.reason.up .dot { background: var(--risk); }
+.reason.down .dot { background: var(--safe); }
+
+/* Metric tiles */
+div[data-testid="stMetric"] {
+  background: var(--surface); border: 1px solid var(--line);
+  border-radius: 12px; padding: 14px 16px;
+}
+div[data-testid="stMetricValue"] { font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; }
+
+.note { color: var(--muted); font-size: 0.85rem; }
